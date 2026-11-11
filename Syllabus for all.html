@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science & Math Syllabus Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --chem-color: #4f46e5;
+            --math-color: #10b981;
+            --physics-color: #ef4444;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+        }
+        
+        .floating-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .floating-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chemistry-card {
+            border-top: 4px solid var(--chem-color);
+        }
+        
+        .mathematics-card {
+            border-top: 4px solid var(--math-color);
+        }
+        
+        .physics-card {
+            border-top: 4px solid var(--physics-color);
+        }
+        
+        .subject-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .topic-badge {
+            transition: all 0.2s ease;
+        }
+        
+        .topic-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Animation for section headers */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/897fdd2f-0678-4d5a-8e52-c588ecaeb8cd.png" alt="Atom symbol with graduation cap icon representing academic excellence" class="h-12 w-12 mr-3">
+                <h1 class="text-3xl font-bold text-gray-900">Science Syllabus Portal</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors">
+                    <i class="fas fa-bookmark"></i> Bookmarks
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative bg-indigo-700">
+        <div class="absolute inset-0">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/252f27a0-0f81-47cd-b115-9cc38bb1edf2.png" alt="Abstract science background with molecular structures, mathematical symbols and physics equations blending together" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Comprehensive Science & Math Syllabus
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-indigo-100">
+                Explore detailed syllabi for Chemistry, Mathematics, and Physics with organized topics and interactive elements.
+            </p>
+            <div class="mt-10 flex justify-center space-x-6">
+                <a href="#chemistry" class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+                    <i class="fas fa-flask mr-2"></i> Chemistry
+                </a>
+                <a href="#mathematics" class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+                    <i class="fas fa-square-root-alt mr-2"></i> Mathematics
+                </a>
+                <a href="#physics" class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+                    <i class="fas fa-atom mr-2"></i> Physics
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden floating-card chemistry-card">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="p-3 bg-indigo-100 rounded-full text-indigo-600">
+                            <i class="subject-icon fas fa-flask"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Chemistry</h3>
+                            <p class="text-gray-500">21 major topics</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        Comprehensive coverage from atomic structure to organic chemistry with practical applications.
+                    </p>
+                    <div class="mt-6">
+                        <a href="#chemistry" class="text-indigo-600 hover:text-indigo-800 font-medium">
+                            Explore Chemistry syllabus <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden floating-card mathematics-card">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="p-3 bg-emerald-100 rounded-full text-emerald-600">
+                            <i class="subject-icon fas fa-square-root-alt"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Mathematics</h3>
+                            <p class="text-gray-500">10 core areas</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        From algebra to calculus, covering all essential mathematical concepts with practical applications.
+                    </p>
+                    <div class="mt-6">
+                        <a href="#mathematics" class="text-emerald-600 hover:text-emerald-800 font-medium">
+                            Explore Math syllabus <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden floating-card physics-card">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="p-3 bg-red-100 rounded-full text-red-600">
+                            <i class="subject-icon fas fa-atom"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Physics</h3>
+                            <p class="text-gray-500">18 foundational topics</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        Mechanics, thermodynamics, electromagnetism and modern physics concepts explained clearly.
+                    </p>
+                    <div class="mt-6">
+                        <a href="#physics" class="text-red-600 hover:text-red-800 font-medium">
+                            Explore Physics syllabus <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chemistry Syllabus Section -->
+        <section id="chemistry" class="mb-20 animate-section">
+            <div class="flex items-center mb-8">
+                <div class="p-2 bg-indigo-100 rounded-lg text-indigo-600 mr-4">
+                    <i class="fas fa-flask text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">Chemistry Syllabus</h2>
+            </div>
+            
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                    <!-- General Chemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">General Topics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Atoms & molecules, Dalton's theory</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Mole concept, chemical formulae, balanced reactions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Stoichiometric calculations (oxidation-reduction, neutralisation, displacement)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Concentration: mole fraction, molarity, molality, normality</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- States of Matter -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">States of Matter</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Gas laws, ideal gas equation, absolute temperature scale</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Deviations from ideality: van der Waals equation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Kinetic theory: average, RMS, most probable velocity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Law of partial pressures, diffusion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Intermolecular forces, vapour pressure, surface tension, viscosity</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Atomic Structure -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Atomic Structure</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Bohr's model, hydrogen spectrum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>de Broglie hypothesis, wave-particle duality</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Uncertainty principle, quantum numbers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Shapes of s, p, d orbitals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Aufbau, Pauli, Hund's rules</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Chemical Bonding -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Chemical Bonding</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Covalent bond, orbital overlap</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Hybridisation: s, p, d</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Molecular orbital theory (up to Ne₂)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Hydrogen bonding, VSEPR model</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Dipole moment, molecular shapes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Thermodynamics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Thermodynamics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>State functions, intensive/extensive properties</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>First law: internal energy, work, heat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Enthalpy, heat capacity, Hess's law</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Second law: entropy, Gibbs energy, spontaneity criteria</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Equilibrium -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Equilibrium</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Law of mass action, ΔG and ΔG⁰</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Equilibrium constants (Kp, Kc)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Le Chatelier's principle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Solubility product, common ion effect</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Acids & bases (Brønsted, Lewis), buffer, salt hydrolysis</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Chemistry Syllabus (Initially Hidden) -->
+                <div id="chemistry-full-syllabus" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 hidden">
+                    <!-- Electrochemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Electrochemistry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Electrochemical cells, Nernst equation, EMF</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Electrode potentials, electrochemical series</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Faraday’s laws, conductivity (specific, molar, equivalent)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Batteries (primary, secondary), fuel cells, corrosion</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Chemical Kinetics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Chemical Kinetics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Rate laws, order, molecularity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Half-life, integrated rate laws (0 & 1st order)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Arrhenius equation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Homogeneous/heterogeneous catalysis, enzymes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Solid State -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Solid State</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Crystalline solids, 7 crystal systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Packing: fcc, bcc, hcp</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Point defects, ionic radii, radius ratio</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Solutions -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Solutions</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Henry’s law, Raoult’s law, ideal solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Colligative properties (VP, BP, FP, OP)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>van’t Hoff factor</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Surface Chemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Surface Chemistry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Adsorption (Physisorption, Chemisorption)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Freundlich isotherm</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Colloids, emulsions, micelles</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Periodic Table -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Periodic Table</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Modern periodic law</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Trends: radius, ionization, electron gain, reactivity, valence</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hydrogen -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Hydrogen</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Position, isotopes, hydrides</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Water, heavy water, hydrogen peroxide</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Hydrogen as fuel</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- s-Block Elements -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">s-Block Elements</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Alkali & alkaline earth metals: reactivity, reducing nature</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Anomalous behaviour of Li, Be</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Compounds of Na and Ca (uses, properties)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- p-Block Elements (Groups 13–18) -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">p-Block Elements (Groups 13–18)</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Oxidation states, trends, anomalies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Important compounds of:</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 13: borax, BF₃, AlCl₃</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 14: CO₂, SiO₂, silicones</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 15: NH₃, HNO₃, oxoacids</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 16: SO₂, H₂SO₄</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 17: Cl₂, HCl, oxoacids, interhalogens</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Group 18: Xenon compounds</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- d- & f-Block Elements -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">d- & f-Block Elements</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Oxidation states, electrode potentials, alloys</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Chromium & manganese oxoanions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Lanthanoid/actinoid contraction, general characteristics</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Coordination Compounds -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Coordination Compounds</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Werner’s theory, nomenclature, isomerism</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>VBT, CFT (octahedral, tetrahedral)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Magnetic properties, colours, spectrochemical series</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Stability, metal carbonyls</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Metallurgy -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Metallurgy</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Ores & concentration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Extraction (Fe, Cu, Zn, Al)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Cyanide process (Ag, Au), refining methods</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Qualitative Analysis -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Qualitative Analysis</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Cations: Ag⁺, Cu²⁺, Fe³⁺, etc.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Anions: nitrate, halides (excl. fluoride), carbonate, sulphate, sulphide</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Environmental Chemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Environmental Chemistry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Pollution (air, water, soil), industrial waste</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Green chemistry</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Organic Chemistry Basics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Organic Chemistry Basics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Hybridisation, aromaticity, isomerism</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>IUPAC naming, hydrogen bonding, inductive/resonance/hyperconjugation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Intermediates: carbocations, carbanions, radicals</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hydrocarbons -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Hydrocarbons</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Alkanes: properties, preparation, reactions (halogenation, combustion)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Alkenes/Alkynes: electrophilic addition, hydration, KMnO₄ reaction, ozonolysis</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Aromatic Compounds -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Aromatic Compounds</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Benzene: electrophilic substitution (nitration, halogenation, etc.)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Directing effects</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Functional Groups -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Functional Groups</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Phenols: reactions, synthesis (Kolbe, Reimer-Tiemann)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Alkyl halides: Grignard, substitution reactions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Alcohols: conversions, reactivity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Ethers: Williamson synthesis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Aldehydes/Ketones: aldol, Cannizzaro, nucleophilic additions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Carboxylic Acids: preparation, reactions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Amines: Hoffmann, Gabriel, diazonium salts</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Biomolecules -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Biomolecules</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Carbohydrates, proteins, nucleic acids</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Reactions, structure, functions</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Polymers -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Polymers</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Types, examples: nylon, bakelite, PVC</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Biodegradable polymers</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Everyday Chemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Everyday Chemistry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Drugs, detergents, soaps, sweeteners</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Organic Practical Chemistry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-indigo-300 transition-colors">
+                        <h3 class="font-bold text-lg text-indigo-700 mb-3">Organic Practical Chemistry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Element detection: N, S, halogens</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-indigo-500 mt-2 mr-2"></i>
+                                <span>Functional group identification: –OH, –COOH, –NO₂, etc.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+                    <button class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center" onclick="toggleSyllabus('chemistry-full-syllabus', this)">
+                        Show all Chemistry topics <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mathematics Syllabus Section -->
+        <section id="mathematics" class="mb-20 animate-section" style="animation-delay: 0.1s;">
+            <div class="flex items-center mb-8">
+                <div class="p-2 bg-emerald-100 rounded-lg text-emerald-600 mr-4">
+                    <i class="fas fa-square-root-alt text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">Mathematics Syllabus</h2>
+            </div>
+            
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                    <!-- Sets, Relations, Functions -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Sets, Relations, Functions</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Types of sets, set operations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Venn diagrams, De Morgan's laws</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Relations: ordered pairs, domain, codomain</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Functions: polynomial, trigonometric, exponential, etc.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>One-one, onto, inverse, composition</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Algebra -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Algebra</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Complex numbers, conjugates, polar form</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Fundamental theorem of algebra</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Quadratic equations: roots, symmetric functions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Progressions: AP, GP, sums</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Logarithms, permutations, combinations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Binomial theorem & properties</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Matrices & Determinants -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Matrices & Determinants</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Types of matrices, operations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Determinants (up to 3×3), inverse, adjoint</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Properties, transformations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>System of equations (2/3 variables)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Probability & Statistics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Probability & Statistics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Probability rules, conditional probability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Bayes' theorem, permutations/combinations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Central tendency: mean, median, mode</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Dispersion: variance, SD, grouped/ungrouped data</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Trigonometry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Trigonometry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Trig functions & identities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Graphs, multiple angle formulas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>General solution of trig equations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Inverse trig functions & properties</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Differential Calculus -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Differential Calculus</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Limits, continuity, L'Hôpital's Rule</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Differentiation rules, chain rule</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Tangents, normals, increasing/decreasing functions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Maxima, minima, Rolle's and Lagrange's theorems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Implicit functions, higher-order derivatives</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Mathematics Syllabus (Initially Hidden) -->
+                <div id="mathematics-full-syllabus" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 hidden">
+                    <!-- Analytical Geometry -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Analytical Geometry</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>2D Geometry</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Distance, section formula, straight lines</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Circles: equations, tangents, normals, chords</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Conics: parabola, ellipse, hyperbola (standard forms, tangents)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>3D Geometry</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Distance, direction cosines/ratios</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Lines, planes, angles between them</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Coplanar lines, shortest distance</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integral Calculus -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Integral Calculus</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Indefinite & definite integrals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Fundamental theorem, properties</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Integration methods: substitution, parts, partial fractions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Area under curves</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Differential equations: formation, solving (separable, linear, homogeneous)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Vectors -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-emerald-300 transition-colors">
+                        <h3 class="font-bold text-lg text-emerald-700 mb-3">Vectors</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Addition, scalar multiplication</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Dot & cross product</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-emerald-500 mt-2 mr-2"></i>
+                                <span>Scalar & vector triple products, geometry applications</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+                    <button class="text-emerald-600 hover:text-emerald-800 font-medium flex items-center" onclick="toggleSyllabus('mathematics-full-syllabus', this)">
+                        Show all Mathematics topics <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Physics Syllabus Section -->
+        <section id="physics" class="mb-20 animate-section" style="animation-delay: 0.2s;">
+            <div class="flex items-center mb-8">
+                <div class="p-2 bg-red-100 rounded-lg text-red-600 mr-4">
+                    <i class="fas fa-atom text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">Physics Syllabus</h2>
+            </div>
+            
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                    <!-- General Physics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">General Topics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Units and dimensions, dimensional analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Least count, significant figures</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Methods of measurement and error analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Experiments with various instruments and measurements</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Mechanics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Mechanics & Kinematics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Motion in one & two dimensions (Cartesian only)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Projectiles, uniform circular motion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Relative velocity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Newton's laws of motion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Inertial and non-inertial frames</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Static & dynamic friction</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Work, Energy & Power -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Work, Energy & Power</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Kinetic and potential energy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Work and power calculations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Conservation of momentum and mechanical energy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Centre of mass & motion concepts</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Rigid Body Dynamics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Rigid Body Dynamics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Moment of inertia (M.I.), parallel & perpendicular axis theorems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>M.I. of simple shapes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Angular momentum, torque, conservation of angular momentum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Dynamics of rotation, rolling motion</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Thermodynamics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Thermodynamics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Thermal expansion (solids, liquids, gases)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Calorimetry, latent heat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Conduction (1D), convection, radiation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Newton's law of cooling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Ideal gas laws, specific heats (Cv, Cp)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Electricity and Magnetism -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Electricity and Magnetism</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Coulomb's law, electric field & potential</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Energy of point charges & dipoles</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Field lines, Gauss's law & applications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Ohm's law and series & parallel circuits</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Kirchhoff's laws and applications</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full Physics Syllabus (Initially Hidden) -->
+                <div id="physics-full-syllabus" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 hidden">
+                    <!-- Current Electricity (continued) -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Current Electricity (cont.)</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Heating effect of current</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Magnetism (continued) -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Magnetism (cont.)</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Biot–Savart’s law, Ampère’s law</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Magnetic field (straight wire, solenoid, circular coil)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Force on charges/wires in a magnetic field</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Magnetic moment, torque on current loop</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Moving coil galvanometer, voltmeter, ammeter & conversions</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Electromagnetic Induction -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Electromagnetic Induction</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Faraday’s law, Lenz’s law</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Self & mutual inductance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>RC, LR, LC, LCR circuits with AC/DC</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Electromagnetic Waves -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Electromagnetic Waves</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Characteristics of EM waves</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Electromagnetic spectrum:</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Radio, microwave, IR, visible, UV, X-ray, gamma</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Basic uses of each wave</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Optics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Optics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Ray Optics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Rectilinear propagation, reflection, refraction</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Plane and spherical surfaces</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Total internal reflection, prism dispersion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Thin lenses & combinations, magnification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Wave Optics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Huygens’s principle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Young’s double slit experiment (interference)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Single slit diffraction</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Polarization: plane polarized light, Brewster’s law, Polaroids</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modern Physics -->
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-red-300 transition-colors">
+                        <h3 class="font-bold text-lg text-red-700 mb-3">Modern Physics</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Atomic nucleus: α, β, γ radiations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Radioactive decay laws, half-life, mean life</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Binding energy, nuclear fission & fusion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Photoelectric effect</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>Bohr’s model of hydrogen atom</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>X-rays: characteristic & continuous, Moseley’s law</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-red-500 mt-2 mr-2"></i>
+                                <span>de Broglie waves</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+                    <button class="text-red-600 hover:text-red-800 font-medium flex items-center" onclick="toggleSyllabus('physics-full-syllabus', this)">
+                        Show all Physics topics <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Learning Resources</h2>
+                <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Supplement your studies with these recommended resources for Chemistry, Mathematics and Physics.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-indigo-50 rounded-xl p-6">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mb-4">
+                        <i class="fas fa-video text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Video Tutorials</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive video explanations for all topics with animations and problem-solving techniques.
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center">
+                        Watch Videos <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-emerald-50 rounded-xl p-6">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white mb-4">
+                        <i class="fas fa-file-pdf text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Practice Problems</h3>
+                    <p class="text-gray-600 mb-4">
+                        Downloadable worksheets with solved examples and exercises to test your understanding.
+                    </p>
+                    <a href="#" class="text-emerald-600 hover:text-emerald-800 font-medium inline-flex items-center">
+                        Download PDFs <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-red-50 rounded-xl p-6">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white mb-4">
+                        <i class="fas fa-flask text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Virtual Labs</h3>
+                    <p class="text-gray-600 mb-4">
+                        Interactive simulations for physics experiments and chemistry practicals with step-by-step guidance.
+                    </p>
+                    <a href="#" class="text-red-600 hover:text-red-800 font-medium inline-flex items-center">
+                        Explore Labs <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule a Class Section -->
+        <section class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-xl overflow-hidden">
+            <div class="relative">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e0e5720-fa38-4d3b-abda-67ab6c53aa95.png" alt="Abstract purple and blue molecular background representing advanced learning concepts" class="absolute inset-0 w-full h-full object-cover opacity-10">
+                <div class="relative px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                            Ready to Master These Subjects?
+                        </h2>
+                        <p class="mt-6 text-xl text-indigo-100 max-w-2xl mx-auto">
+                            Schedule a class with our expert tutors for personalized guidance and doubt resolution.
+                        </p>
+                        <div class="mt-10 flex items-center justify-center gap-x-6">
+                            <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+                                <i class="fas fa-calendar-alt mr-2"></i> Book a Session
+                            </a>
+                            <a href="#" class="text-white font-medium hover:text-indigo-100">
+                                Learn more about tutoring <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-medium text-white mb-6">Subjects</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#chemistry" class="hover:text-white transition-colors">Chemistry</a></li>
+                        <li><a href="#mathematics" class="hover:text-white transition-colors">Mathematics</a></li>
+                        <li><a href="#physics" class="hover:text-white transition-colors">Physics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white mb-6">Resources</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-white transition-colors">Tutorial Videos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Practice Problems</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Exam Preparation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white mb-6">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium text-white mb-6">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-gray-400">Subscribe to our newsletter</p>
+                        <div class="mt-2 flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full text-gray-800">
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition-colors">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-center">
+                    &copy; 2023 Science Syllabus Portal. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for cards on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Observe all cards
+            document.querySelectorAll('.floating-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Function to toggle syllabus visibility
+        function toggleSyllabus(syllabusId, buttonElement) {
+            const fullSyllabusDiv = document.getElementById(syllabusId);
+            const icon = buttonElement.querySelector('i');
+
+            if (fullSyllabusDiv.classList.contains('hidden')) {
+                fullSyllabusDiv.classList.remove('hidden');
+                buttonElement.innerHTML = `Show less topics <i class="fas fa-chevron-up ml-2"></i>`;
+            } else {
+                fullSyllabusDiv.classList.add('hidden');
+                buttonElement.innerHTML = `Show all ${syllabusId.replace('-full-syllabus', '').charAt(0).toUpperCase() + syllabusId.replace('-full-syllabus', '').slice(1)} topics <i class="fas fa-chevron-down ml-2"></i>`;
+            }
+        }
+    </script>
+</body>
+</html>
